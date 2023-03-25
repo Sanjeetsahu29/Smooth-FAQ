@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian | Smooth FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b43a2ff24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <h1 id="heading">FAQ's</h1>
+    <div class="accordian">
+        <div class="question">
+            <h4>
+                Explain public static void main(String args[]) in Java.
+            </h4>
+            <i class="icon fa-solid fa-sort-down"></i>
+        </div>
+        <div class="answer">
+            main() in Java is the entry point for any Java program. It is always written as public static void main(String[] args). <br><br>
+
+            public: Public is an access modifier, which is used to specify who can access this method. Public means that this Method will be accessible by any Class. <br><br>
+            static: It is a keyword in java which identifies it is class-based. main() is made static in Java so that it can be accessed without creating the instance of a Class. In case, main is not made static then the compiler will throw an error as main() is called by the JVM before any objects are made and only static methods can be directly invoked via the class. <br><br>
+            void: It is the return type of the method. Void defines the method which will not return any value. <br><br>
+            main: It is the name of the method which is searched by JVM as a starting point for an application with a particular signature only. It is the method where the main execution occurs. <br><br>
+            String args[]: It is the parameter passed to the main method.
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4>
+                Why Java is platform independent?
+            </h4>
+            <i class="icon fa-solid fa-sort-down"></i>
+        </div>
+        <div class="answer">
+            Java is called platform independent because of its byte codes which can run on any system irrespective of its underlying operating system.
+        </div> 
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4>
+                Why Java is not 100% Object-oriented?
+            </h4>
+            <i class="icon fa-solid fa-sort-down"></i>
+        </div>
+        <div class="answer">
+            Java is not 100% Object-oriented because it makes use of eight primitive data types such as boolean, byte, char, int, float, double, long, short which are not objects.
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4>
+               What are wrapper classes in Java?
+            </h4>
+            <i class="icon fa-solid fa-sort-down"></i>
+        </div>
+        <div class="answer ">
+            Wrapper classes convert the Java primitives into the reference types (objects). Every primitive data type has a class dedicated to it. These are known as wrapper classes because they “wrap” the primitive data type into an object of that class. Refer to the below image which displays different primitive type, wrapper class and constructor argument.
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4>
+                What are constructors in Java?
+            </h4>
+            <i class="icon fa-solid fa-sort-down"></i>
+        </div>
+        <div class="answer ">
+            In Java, constructor refers to a block of code which is used to initialize an object. It must have the same name as that of the class. Also, it has no return type and it is automatically called when an object is created. <br><br>
+
+                There are two types of constructors:<br><br>
+
+                Default Constructor: In Java, a default constructor is the one which does not take any inputs. In other words, default constructors are the no argument constructors which will be created by default in case you no other constructor is defined by the user. Its main purpose is to initialize the instance variables with the default values. Also, it is majorly used for object creation. <br><br>
+                Parameterized Constructor: The parameterized constructor in Java, is the constructor which is capable of initializing the instance variables with the provided values. In other words, the constructors which take the arguments are called parameterized constructors.
+        </div>
+    </div>
+</div>
+    <script src="smooth.js"></script>
+</body>
+</html>
